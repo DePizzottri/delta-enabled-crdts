@@ -306,7 +306,7 @@ public:
   map<pair<K,int>,T> ds;  // Map of dots to vals
 
   dotcontext<K> cbase;
-  dotcontext<K> & c;
+  dotcontext<K> c;
 
   // if no causal context supplied, used base one
   dotkernel() : c(cbase) {} 
