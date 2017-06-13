@@ -862,7 +862,8 @@ public:
 template<typename E, typename K=string> // Map embedable datatype
 class aworset    // Add-Wins Observed-Remove Set
 {
-private:
+//private:
+public:
   dotkernel<E,K> dk; // Dot kernel
   K id;
 
@@ -883,7 +884,7 @@ public:
   }
 
 
-  set<E> read ()
+  set<E> read () const
   {
     set<E> res;
     for (const auto &dv : dk.ds)
